@@ -1,0 +1,22 @@
+//probando pane con uGens
+
+import ddf.minim.*;
+import ddf.minim.ugens.*;
+
+
+Minim minim;
+AudioOutput out;
+
+void setup(){
+  
+}
+
+void draw(){
+  
+}
+
+void stop(){
+  out.close();
+  minim.stop();
+  super.stop();
+}
