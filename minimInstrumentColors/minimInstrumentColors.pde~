@@ -1,0 +1,35 @@
+void setup(){
+  
+}
+
+void draw(){
+  
+}
+
+
+
+class senoide implements Instrument
+{
+  
+  Oscil wave;
+  Line ampEnv;
+
+
+   senoide (float frecuency) {
+     wave = new Oscil( frecuency,0,Waves.SINE);
+     ampEnv = new Line();
+     ampEnv.patch(wave.amplitude);
+  }
+
+  void noteOn(float duration)
+  {
+
+    ampEnv.activate(duration,0.5f,0);
+    wave.patch(out);
+  }
+
+  void noteOff()
+  {
+    wave.unpatch(out);
+  }
+}
