@@ -1,3 +1,15 @@
+/*
+ * Este sketch trata de como generar un sencillo instrumento que
+ * se ejecuta de manera aleatoria usando
+ * la librería Minim (http://code.compartmental.net/tools/minim)
+ * 
+ * desarrollado por Adrian Segovia Nessen ## tio necio ##
+ * (http://segovianessen.cc)
+ *
+ *##  felices compilaciones ##
+ */
+
+
 import ddf.minim.*;
 import ddf.minim.ugens.*;
 
